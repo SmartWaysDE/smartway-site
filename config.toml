@@ -2,7 +2,7 @@ baseURL = "/"
 languageCode = "de-de"
 title = "Planbar – Vorlagen, Rechner & Checklisten"
 theme = "PaperMod"
-paginate = 10
+pagerSize = 10
 
 [params]
   env = "production"
