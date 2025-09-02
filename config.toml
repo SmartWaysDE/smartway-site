@@ -1,0 +1,35 @@
+baseURL = "/"
+languageCode = "de-de"
+title = "Planbar – Vorlagen, Rechner & Checklisten"
+theme = "PaperMod"
+paginate = 10
+
+[params]
+  env = "production"
+  defaultTheme = "light"
+  description = "Deine faceless Factory für produktive Vorlagen, Rechner und Checklisten."
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowBreadCrumbs = true
+  ShowPostNavLinks = true
+  ShowCodeCopyButtons = true
+  comments = false
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[permalinks]
+  blog = "/{{slug}}/"
+  produkte = "/produkte/{{slug}}/"
+
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true
+
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+[taxonomies]
+  tag = "tags"
