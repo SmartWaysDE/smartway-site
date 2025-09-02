@@ -1,6 +1,6 @@
 baseURL = "/"
 languageCode = "de-de"
-title = "Planbar – Vorlagen, Rechner & Checklisten"
+title = "SmartWays – Vorlagen, Rechner & Checklisten"
 theme = "PaperMod"
 
 [pagination]
@@ -38,21 +38,70 @@ theme = "PaperMod"
 
 [menu]
 
+  # --- Hauptmenü (oben) ---
   [[menu.main]]
   name = "Haushalt & Finanzen"
   url  = "/blog/haushalt/"
   weight = 10
+  identifier = "haushalt"
 
   [[menu.main]]
   name = "Job & Bewerbung"
   url  = "/blog/job/"
   weight = 20
+  identifier = "job"
 
   [[menu.main]]
   name = "Lernen & Alltag"
   url  = "/blog/lernen/"
   weight = 30
+  identifier = "lernen"
 
+  [[menu.main]]
+  name = "Shop"
+  url  = "/produkte/"
+  weight = 40
+
+  # --- Dropdown-Unterpunkte unter Haushalt ---
+  [[menu.main]]
+  name = "Haushaltsbuch führen"
+  url = "/haushaltsbuch-fuehren/"
+  weight = 11
+  parent = "haushalt"
+
+  [[menu.main]]
+  name = "Fixkosten-Liste"
+  url = "/fixkosten-liste/"
+  weight = 12
+  parent = "haushalt"
+
+  # --- Dropdown-Unterpunkte unter Job ---
+  [[menu.main]]
+  name = "Anschreiben-Generator"
+  url = "/bewerbung-anschreiben-generator/"
+  weight = 21
+  parent = "job"
+
+  [[menu.main]]
+  name = "Anschreiben Quereinsteiger"
+  url = "/anschreiben-quereinsteiger/"
+  weight = 22
+  parent = "job"
+
+  # --- Dropdown-Unterpunkte unter Lernen ---
+  [[menu.main]]
+  name = "Lernplan erstellen"
+  url = "/lernplan-erstellen/"
+  weight = 31
+  parent = "lernen"
+
+  [[menu.main]]
+  name = "Pomodoro-Vorlage"
+  url = "/pomodoro-vorlage/"
+  weight = 32
+  parent = "lernen"
+
+  # --- Footer-Menü (unten) ---
   [[menu.footer]]
   name = "Impressum"
   url  = "/impressum/"
@@ -62,5 +111,6 @@ theme = "PaperMod"
   name = "Datenschutz"
   url  = "/datenschutz/"
   weight = 20
+
 
 # force-deploy 2025-09-02T14:54:05
