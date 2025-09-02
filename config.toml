@@ -36,4 +36,31 @@ theme = "PaperMod"
 [taxonomies]
   tag = "tags"
 
+[menu]
+
+  [[menu.main]]
+  name = "Haushalt & Finanzen"
+  url  = "/blog/haushalt/"
+  weight = 10
+
+  [[menu.main]]
+  name = "Job & Bewerbung"
+  url  = "/blog/job/"
+  weight = 20
+
+  [[menu.main]]
+  name = "Lernen & Alltag"
+  url  = "/blog/lernen/"
+  weight = 30
+
+  [[menu.footer]]
+  name = "Impressum"
+  url  = "/impressum/"
+  weight = 10
+
+  [[menu.footer]]
+  name = "Datenschutz"
+  url  = "/datenschutz/"
+  weight = 20
+
 # force-deploy 2025-09-02T14:54:05
