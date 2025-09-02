@@ -1,0 +1,26 @@
+﻿:root{
+  --primary: #2563eb;        /* Akzentfarbe -> gern anpassen */
+  --content-width: 840px;    /* breiterer Textblock */
+}
+.list .post-entry{
+  border-radius:16px;
+  box-shadow:0 6px 24px rgba(0,0,0,.06);
+  transition:transform .12s ease, box-shadow .12s ease;
+  padding:1.1rem 1.2rem;
+}
+.list .post-entry:hover{
+  transform:translateY(-2px);
+  box-shadow:0 10px 28px rgba(0,0,0,.09);
+}
+.post-content img{ border-radius:12px; }
+.header,.nav,.menu{ backdrop-filter:saturate(140%) blur(6px); }
+footer.footer{ border-top:1px solid var(--theme); opacity:.9; }
+
+/* Buttons + Badges */
+.btn{display:inline-block;padding:.78rem 1.1rem;border-radius:12px;border:1px solid var(--primary);text-decoration:none}
+.btn-primary{background:var(--primary);color:#fff}
+.btn:hover{filter:brightness(1.05)}
+.price{font-weight:600;margin-left:.35rem;opacity:.9}
+.badge{display:inline-block;padding:.2rem .5rem;border-radius:999px;border:1px solid var(--primary);font-size:.8rem;margin-left:.5rem}
+
+/* more styles here */
