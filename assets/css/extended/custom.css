@@ -24,3 +24,48 @@ footer.footer{ border-top:1px solid var(--theme); opacity:.9; }
 .badge{display:inline-block;padding:.2rem .5rem;border-radius:999px;border:1px solid var(--primary);font-size:.8rem;margin-left:.5rem}
 
 /* more styles here */
+/* Center titles on home & single pages */
+.home .page-title,
+.single .post-title,
+.list .page-title {
+  text-align: center;
+}
+
+/* Optional: Untertitel / Beschreibung unter h1 zentrieren */
+.post-description { text-align: center; }
+/* Center titles site-wide */
+h1.post-title, h1.page-title { text-align: center; }
+/* Center first paragraph on home */
+.home .post-content > p:first-of-type { text-align: center; }
+
+/* Footer nav styling */
+.site-extra-footer{ text-align:center; margin-top:2rem; font-size:.95rem; opacity:.85 }
+.site-extra-footer .footer-nav a{ margin:0 .5rem; }
+/* Überschriften + Intro-Text mittig */
+.home .post-title,
+.home .post-content,
+.single .post-title,
+.single .post-content {
+  text-align: center;
+}
+
+/* Footer mittig ausrichten */
+footer.site-extra-footer {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: .95rem;
+  opacity: .85;
+}
+
+footer.site-extra-footer .footer-nav {
+  margin-bottom: 0.5rem;
+}
+
+footer.site-extra-footer .footer-nav a {
+  margin: 0 0.75rem;
+  text-decoration: none;
+}
+
+footer.site-extra-footer .footer-nav a:hover {
+  text-decoration: underline;
+}
